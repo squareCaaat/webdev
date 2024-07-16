@@ -1,0 +1,69 @@
+.preview{
+    margin: 20px;
+}
+
+.preview_title{
+    color:inherit;
+}
+
+.preview_wrapper{
+    color: inherit;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 18px;
+    background-color: #666666;
+    
+}
+
+.name{
+    display: flex;
+}
+
+.cta{
+    display: flex;
+}
+
+
+.progress_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #AAAAAA;
+    border-radius: 18px;
+}
+
+.progress{
+    background-color: green;
+    width: 20%;
+    height: 21.6px;
+    border-radius: 18px;
+}
+
+.progress_number{
+    margin-right: 10px;
+    text-align: center;
+}
+
+.participant_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.participant{
+    display: flex;
+
+}
+
+.complete_number{
+    display: flex;
+
+}

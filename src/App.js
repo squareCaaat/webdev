@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import Home from "./routes/Home";
+import Challenges from "./routes/Challenges";
+import ChallengeForm from "./routes/ChallengeForm";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />}></Route>
+        <Route path={`${process.env.PUBLIC_URL}/challenges`} element={<Challenges />}></Route>
+        <Route path={`${process.env.PUBLIC_URL}/challenges/create`} element={<ChallengeForm />}></Route>
+      </Routes>
+    </Router>
   );
 }
 

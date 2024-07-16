@@ -1,0 +1,19 @@
+.preview{
+    margin: 20px;
+}
+
+.content_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;   
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #666666;
+    border-radius: 18px;
+    margin: 10px 0;
+}

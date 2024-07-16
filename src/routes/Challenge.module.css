@@ -1,0 +1,9 @@
+.wrapper{
+    margin: 20px;
+}
+
+.content_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+

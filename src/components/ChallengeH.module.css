@@ -1,0 +1,35 @@
+.wrapper{
+    margin: 10px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.progressbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #888;
+    border-radius: 18px;
+}
+
+.progress{
+    width: 20%;
+    height: 21.6px;
+    border-radius: 18px;
+    background-color: green;
+}
+
+.progress_number{
+    margin-right: 8px;
+}
+
+.detail_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
