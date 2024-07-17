@@ -3,13 +3,10 @@ import Challenge2 from "../components/Challenge2";
 import Challenge3 from "../components/Challenge3";
 import ChallengeC from "../components/ChallengeCreate";
 import ChallengeH from "../components/ChallengeH";
-import axios from "axios";
 import Header from "../components/Header";
 import styles from "./Challenge.module.css";
 
 function Challenges(){
-    const apiurl = "api/v1/challenges/";
-
     return(
         <div>
             <Header />

@@ -94,3 +94,9 @@ textarea:focus {
     color: inherit;
 }
 
+
+@media screen and (max-width: 580px) {
+    .btn_wrapper{
+        justify-content: center;
+    }
+}
