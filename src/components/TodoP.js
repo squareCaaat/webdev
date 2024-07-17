@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import styles from "./TodoP.module.css";
 
 function TodoP(){
     return (
         <div className={styles.preview}>
-            <h4 className={styles.preview_title}>사소한 것이라도 괜찮아 너만의 길을 걸어봐!</h4>
+            <Link to={`${process.env.PUBLIC_URL}/todos`}>
+                <h4 className={styles.preview_title}>사소한 것이라도 괜찮아 너만의 길을 걸어봐!</h4>
+            </Link>
             <ul className={styles.content_wrapper}>
                 <li className={styles.item}>
                     <span className={styles.goal}>팔 굽혀 펴기 1회</span>

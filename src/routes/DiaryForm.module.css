@@ -1,4 +1,4 @@
-.wrapper{
+/* .wrapper{
     margin: 10px;   
     padding: 10px;
     height: 580px;
@@ -36,6 +36,7 @@
     border: 0;
     border-radius: 18px;
     cursor: pointer;
+    background-color: lightblue;
 }
 
 #cancelbtn{
@@ -44,5 +45,104 @@
     border: 0;
     border-radius: 18px;
     cursor: pointer;
+    background-color: lightcoral;
+}
+ */
+
+
+ .wrapper {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.create_wrapper {
+    padding: 10px;
+}
+
+.input_wrapper {
+    margin-bottom: 15px;
+}
+
+.content_title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#diary_name{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#diary_name:focus{
+    outline: none;
+    border-color: dodgerblue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+#diary_content {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#diary_content:focus {
+    outline: none;
+    border-color: dodgerblue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+.btn_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+#createbtn,
+#cancelbtn {
+    width: 120px;
+    height: 40px;
+    margin-left: 10px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#createbtn {
+    background-color: lightblue;
+}
+
+#createbtn:hover{
+    background-color: skyblue;
+}
+
+#cancelbtn {
+    background-color: lightcoral;
+}
+
+#cancelbtn:hover {
+    background-color: coral;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
 }
 

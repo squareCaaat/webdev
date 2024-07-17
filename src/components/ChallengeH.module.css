@@ -1,35 +1,102 @@
-.wrapper{
+/* .wrapper{
     margin: 10px;
 }
+
 
 .content{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
+} */
+
+/* Wrapper 스타일 */
+.wrapper {
+    margin: 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.progressbar{
+/* Content 스타일 */
+.content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #888;
-    border-radius: 18px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
 }
 
-.progress{
-    width: 20%;
+.title {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+}
+
+.organizer {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* 기본 스타일 */
+.progress_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    border-radius: 18px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* 애니메이션 효과 */
+  .progress {
+    background: linear-gradient(90deg, #00f260, #0575e6);
+    width: 0%;
     height: 21.6px;
     border-radius: 18px;
-    background-color: green;
-}
-
-.progress_number{
-    margin-right: 8px;
-}
+    animation: progressAnimation 2s forwards;
+  }
+  
+  @keyframes progressAnimation {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+  
+  /* 진행 숫자 */
+  .progress_number {
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    z-index: 1;
+  }
 
 .detail_wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+/* Detail Wrapper 스타일 */
+.detail_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.participant, .complete {
+    font-size: 0.9em;
+    color: #555;
 }

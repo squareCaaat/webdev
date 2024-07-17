@@ -23,7 +23,6 @@ function ChallengeForm(){
                                 취소    
                             </button>
                         </Link>
-                        
                     </div>
                 </div>
             </div>

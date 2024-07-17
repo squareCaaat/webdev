@@ -1,4 +1,4 @@
-.preview{
+/* .preview{
     margin: 20px;
 }
 
@@ -20,7 +20,7 @@
     border-radius: 18px;
     background-color: #666666;
     
-}
+} 
 
 .name{
     display: flex;
@@ -28,30 +28,110 @@
 
 .cta{
     display: flex;
+} */
+
+
+/* Preview 스타일 */
+.preview {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.preview_title {
+    color: #333;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
 
-.progress_wrapper{
+.preview_title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.preview_title a:hover {
+    color: #6ab04c;
+}
+
+.preview_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Content 스타일 */
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.cta {
+    font-size: 0.9em;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.cta:hover {
+    color: #f39c12;
+}
+
+/* 기본 스타일 */
+.progress_wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #AAAAAA;
+    background-color: #333;
     border-radius: 18px;
-}
-
-.progress{
-    background-color: green;
-    width: 20%;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* 애니메이션 효과 */
+  .progress {
+    background: linear-gradient(90deg, #00f260, #0575e6);
+    width: 0%;
     height: 21.6px;
     border-radius: 18px;
-}
-
-.progress_number{
+    animation: progressAnimation 2s forwards;
+  }
+  
+  @keyframes progressAnimation {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 20%;
+    }
+  }
+  
+  /* 진행 숫자 */
+  .progress_number {
     margin-right: 10px;
     text-align: center;
-}
-
-.participant_wrapper{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    z-index: 1;
+  }
+  
+/* .participant_wrapper{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -66,4 +146,27 @@
 .complete_number{
     display: flex;
 
+} */
+
+/* Participant Wrapper 스타일 */
+.participant_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.participant,
+.complete_number {
+    font-size: 0.9em;
+    color: #555;
+}
+
+@media screen and (max-width: 570px){
+    .preview_title{
+        font-size: 1rem;
+    }
+    .name{
+        font-size: .9rem;
+    }
 }

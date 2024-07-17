@@ -3,16 +3,19 @@ import Challenge2 from "../components/Challenge2";
 import Challenge3 from "../components/Challenge3";
 import ChallengeC from "../components/ChallengeCreate";
 import ChallengeH from "../components/ChallengeH";
+import axios from "axios";
 import Header from "../components/Header";
 import styles from "./Challenge.module.css";
 
 function Challenges(){
+    const apiurl = "api/v1/challenges/";
+
     return(
         <div>
             <Header />
             <div className={styles.wrapper}>
                 <h2 className={styles.title}>챌린지</h2>
-                <h3 className={styles.subtitle}>오늘 제일 핫한 챌린지</h3>
+                <h3 className={styles.subtitle}>&#x1F525;오늘 제일 핫한 챌린지</h3>
                 <div className={styles.hottest}>
                     <ChallengeH />
                 </div>

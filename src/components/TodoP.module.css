@@ -1,4 +1,4 @@
-.preview{
+/* .preview{
     margin: 20px;
 }
 
@@ -16,4 +16,88 @@
     background-color: #666666;
     border-radius: 18px;
     margin: 10px 0;
+} */
+
+/* Preview 스타일 */
+.preview {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.preview_title {
+    color: #333;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+.preview_title:hover {
+    color: #6ab04c;
+}
+
+.content_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Item 스타일 */
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #666;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+    color: #fff;
+}
+
+.item:hover {
+    background-color: #444;
+    transform: translateY(-3px);
+}
+
+.goal {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.cta {
+    font-size: 0.9em;
+    color: whitesmoke;
+    transition: color 0.3s;
+}
+
+.cta:hover {
+    color: #f39c12;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 500px) {
+    .preview {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .preview_title {
+        font-size: 1.1rem;
+        content: "사소한 것이라도 괜찮아!";
+    }
+
+    .item {
+        padding: 10px;
+    }
+
+    .goal {
+        font-size: 1em;
+    }
+
+    .cta {
+        font-size: 0.8em;
+    }
 }
