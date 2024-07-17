@@ -11,7 +11,7 @@ function TodoForm(){
                 <div className={styles.create_wrapper}>
                     <h4 className={styles.content_title}>목표</h4>
                     <input type="text" placeholder="목표 이름" id={styles.todo_name}></input>
-                    <h4 className={styles.content_title}>기한 설정 안 해도 충분해. 도전해보는 거야!</h4>
+                    <h4 className={styles.content_title} id={styles.deadline_title}>목표 기한</h4>
                     <input type="date" id={styles.deadline}></input>
                     <h4 className={styles.content_title}>세부 설명</h4>
                     <textarea name="challenge_content" col="30" row="30" id={styles.todo_content}></textarea>

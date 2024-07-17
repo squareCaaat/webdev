@@ -1,10 +1,10 @@
 import Challenge1 from "../components/Challenge1";
 import Challenge2 from "../components/Challenge2";
 import Challenge3 from "../components/Challenge3";
-import ChallengeC from "../components/ChallengeCreate";
 import ChallengeH from "../components/ChallengeH";
 import Header from "../components/Header";
-import styles from "./Challenge.module.css";
+import styles from "./Challenges.module.css";
+import {Link} from "react-router-dom";
 
 function Challenges(){
     return(
@@ -22,8 +22,14 @@ function Challenges(){
                     <Challenge2 />
                     <Challenge3 />
                 </div>
-                <h3 className={styles.subtitle}>원하는 챌린지가 없나요?</h3>
-                <ChallengeC />
+                <div className={styles.create_wrapper}>
+                    <h3 className={styles.subtitle}>원하는 챌린지가 없나요?</h3>
+                    <Link to={`${process.env.PUBLIC_URL}/challenges/create`}>
+                        <button type="button" id={styles.createbtn}>
+                            새로운 챌린지 만들기
+                        </button>
+                    </Link>
+                </div>
             </div>
         </div>
     );

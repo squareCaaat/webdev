@@ -12,9 +12,7 @@ function DiaryForm() {
           <h4 className={styles.content_title}>제목</h4>
           <input type="text" placeholder="제목" id={styles.diary_name}></input>
           <div className={styles.rate_wrapper}>
-            <h4 className={styles.content_title} id={styles.rating_title}>
-              평가:
-            </h4>
+            <h4 className={styles.content_title} id={styles.rating_title}>평가</h4>
             <fieldset className={styles.rate}>
               <input type="radio" id="rating10" name="rating" value="10" />
               <label for="rating10" title="5점"></label>
@@ -65,7 +63,6 @@ function DiaryForm() {
             row="30"
             id={styles.diary_content}
           ></textarea>
-          <br />
           <div className={styles.btn_wrapper}>
             <button type="button" id={styles.createbtn}>
               작성

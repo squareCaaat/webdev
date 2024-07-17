@@ -1,11 +1,63 @@
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: aliceblue;
-    border-radius: 18px;
-    margin: 10px 20px 20px 20px;
-    height: 300px;
+blockquote{
+    margin: 0;
+    padding: 0;
 }
 
+.wrapper blockquote{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position:relative;
+    border:1px solid #8BC0B8;
+    border-radius:10px;
+    margin: 20px;
+    padding: 10px;
+    height: 200px;
+}
+.wrapper blockquote p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+.wrapper blockquote:before{
+    position:absolute;
+    font-family:'FontAwesome';
+    content:'\f10d';
+    font-size: 20px;
+    color:#8BC0B8;
+    top:10px;
+    left:10px;
+}
+.wrapper blockquote:after{
+    position:absolute;
+    font-family:'FontAwesome';
+    content:'\f10e';
+    font-size: 20px;
+    color:#8BC0B8;
+    right:10px;
+    bottom:10px;
+}
+.wrapper blockquote cite {
+    display: block;
+    font-size: 0.8rem;
+    text-align: right;
+    color: #D4DED7;
+    padding-right:20px;
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper blockquote {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .wrapper blockquote p{
+        padding: 20px;
+        font-size: 1.4rem;
+    }
+    .wrapper blockquote cite{
+        padding-right: 40px;
+    }
+}
