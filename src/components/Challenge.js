@@ -1,12 +1,7 @@
 import styles from "./Challenge.module.css";
 
 /*
-    backend 연결 위한 컴포넌트
-    User 인증 문제로 User 정보는 없음
-    따라서 개최자와 참여자 수는 null이므로
-    프론트단에서 임의로 설정
-    이미지도 백엔드 단에서 구현되지 않아서 
-    텍스트로 대체
+    localhost Backend 연결 완료!
 */
 
 function Challenge({title}){
