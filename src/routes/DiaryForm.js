@@ -67,7 +67,7 @@ function DiaryForm() {
             <button type="button" id={styles.createbtn}>
               작성
             </button>
-            <Link to={`${process.env.PUBLIC_URL}/`}>
+            <Link to={`${process.env.PUBLIC_URL}`}>
               <button type="button" id={styles.cancelbtn}>
                 취소
               </button>
